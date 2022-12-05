@@ -11,20 +11,20 @@
     box-sizing: border-box;
     font-family: SuperMario256;
 }
+html, body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 html, body, .container{
     width: 100%;
     height: 100%;
     background-image: url("imagen/fondo-pantalla1.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-x: -550px; */
+    background-position-x: -400px;
 }
-
-
-/* 
-
-
-
 @font-face {
     font-family: 'SuperMario256';
     src: url(fuente/SuperMario256.ttf) format('truetype');
@@ -37,16 +37,18 @@ html, body, .container{
     justify-content: space-around;
     align-items: center;
     padding: 20px 20px;
-} */
-/* 
-.title-p1{
-    width: 100%;
-    text-align: center;
-    font-size: 200%;
-    color: var(--text-color-title);
 }
-
-.title-p1 p{
+.title-p1{
+    width: 80%;
+    text-align: center;
+    color: var(--text-color-title);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-title{
+    font-size: 200%;
     -webkit-text-stroke: 5px var(--border-letter);
 } 
 
@@ -57,10 +59,12 @@ html, body, .container{
 .btn-start, .btn-start-double {
     background: var(--bg-color-btn-start);
     border: 4px solid var(--border-btn);
-    padding: 10px 10px;
+    padding: 8px 8px;
     border-radius: 50px 50px;
     text-align: center;
-    font-size: 120%;
+}
+.btn-start-double a{
+    font-size: 100%;
 }
 
 .btn-start:hover{
@@ -70,66 +74,78 @@ html, body, .container{
 a:link, a:visited, a:active {
     text-decoration:none;
     color: var(--title-color);
-} */
+}
 
-/* @media only screen and (min-width:700px) and (min-height: 1133px){
+@media only screen and (min-width:600px) and (min-height: 300px){
     html, body, .container{
         width: 100%;
         height: 100%;
-        background-position-x: -500px;
+        background-position-x: 0px;
     }
     .title-p1{
         width: 80%;
-        font-size: 700%;
-        background-color: aqua;
-    }
-    .btn-start{
-        width: 40%;
-        font-size: 200%;
-    }
-} */
-/* 
-@media only screen and (min-width:900px) {
-    html, body, .container{
-        background-position-x: 0px;
-    }
-    .btn-start{
-        width: 30%;
-        font-size: 200%;
-    }
-}
-
-@media only screen and (min-width:1400px){
-    .title-p1{
-        width: 70%;
-        font-size: 800%;
+        font-size: 100%;
     }
     .btn-start{
         width: 20%;
-        font-size: 200%;
+        font-size: 100%;
+    }
+    .btn-start, .btn-start-double {
+        padding: 5px 5px;
     }
 }
-
-@media only screen and (min-height:300px){
+@media only screen and (min-width:744px) and (min-height: 1133px){
     html, body, .container{
-        background-position-x: 0px;
+        background-position-x: -600px;
     }
     .title-p1{
-        width: 50%;
         font-size: 400%;
     }
     .btn-start{
-        width: 30%;
-        font-size: 120%;
+        width: 40%;
+        font-size: 150%;
+    }
+    .btn-start, .btn-start-double {
+        padding: 10px 10px;
     }
 }
-@media only screen and (min-height:700px){
+
+@media only screen and (min-width:1358px) and (min-height: 814px){
+    html, body, .container{
+        background-position-x: 0px;
+    }
+    .container{
+        justify-content: space-between;
+    }
     .title-p1{
-        width: 50%;
-        font-size: 900%;
+        font-size: 500%;
     }
     .btn-start{
         width: 20%;
-        font-size: 120%;
+        font-size: 250%;
+        margin-bottom: 20px;
     }
-} */
+    .btn-start, .btn-start-double {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (min-width:1358px) and (min-height: 814px){
+    html, body, .container{
+        background-position-x: 0px;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .title-p1{
+        font-size: 500%;
+    }
+    .btn-start{
+        width: 20%;
+        font-size: 250%;
+        margin-bottom: 20px;
+    }
+    .btn-start, .btn-start-double {
+        padding: 10px 10px;
+    }
+}
