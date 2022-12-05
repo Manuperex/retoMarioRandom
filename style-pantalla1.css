@@ -20,6 +20,7 @@ html, body, .container{
     background-image: url("/imagen/fondo-pantalla1.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: -550px;
 }
 
 @font-face {
@@ -39,7 +40,7 @@ html, body, .container{
 .title-p1{
     width: 100%;
     text-align: center;
-    font-size: 300%;
+    font-size: 400%;
     color: var(--text-color-title);
 }
 
@@ -63,4 +64,38 @@ html, body, .container{
 a:link, a:visited, a:active {
     text-decoration:none;
     color: var(--title-color);
+}
+@media only screen and (min-width:744px){
+    html, body, .container{
+        background-position-x: -500px;
+    }
+    .title-p1{
+        width: 80%;
+        font-size: 800%;
+    }
+    .btn-start{
+        width: 40%;
+        font-size: 200%;
+    }
+}
+
+@media only screen and (min-width:900px){
+    html, body, .container{
+        background-position-x: 0px;
+    }
+    .btn-start{
+        width: 30%;
+        font-size: 200%;
+    }
+}
+
+@media only screen and (min-width:1400px){
+    .title-p1{
+        width: 70%;
+        font-size: 800%;
+    }
+    .btn-start{
+        width: 20%;
+        font-size: 200%;
+    }
 }
