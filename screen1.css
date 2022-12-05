@@ -68,7 +68,7 @@ html, body, .container{
 }
 
 .btn-start:hover{
-    box-shadow: 5px 5px 5px var(--border-letter);
+    box-shadow: 5px 5px 5px rgb(0, 255, 4);
 }
 
 a:link, a:visited, a:active {
