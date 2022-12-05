@@ -99,3 +99,17 @@ a:link, a:visited, a:active {
         font-size: 200%;
     }
 }
+
+@media only screen and (min-height:300px){
+    html, body, .container{
+        background-position-x: 0px;
+    }
+    .title-p1{
+        width: 50%;
+        font-size: 400%;
+    }
+    .btn-start{
+        width: 30%;
+        font-size: 120%;
+    }
+}
