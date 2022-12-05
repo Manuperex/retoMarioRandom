@@ -19,8 +19,6 @@ html, body, .container{
     background-image: url("/imagen/fondo-pantalla1.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position-x: -300px;
 }
 
 @font-face {
@@ -40,7 +38,7 @@ html, body, .container{
 .title-p1{
     width: 100%;
     text-align: center;
-    font-size: 450%;
+    font-size: 300%;
     color: var(--text-color-title);
 }
 
@@ -55,10 +53,13 @@ html, body, .container{
     border: 4px solid var(--border-btn);
     padding: 10px 10px;
     border-radius: 50px 50px;
-    color: var(--title-color);
     text-align: center;
-    font-size: 150%;
+    font-size: 120%;
 }
 .btn-start:hover{
     box-shadow: 5px 5px 5px var(--border-letter);
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: var(--title-color);
 }
