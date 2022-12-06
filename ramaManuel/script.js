@@ -1,11 +1,9 @@
 const input = document.querySelector("input");
 const addBtn = document.querySelector(".btn-add");
 const ul = document.querySelector("ul");
-const empty = document.querySelector(".empty");
 
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(addBtn);
   const text = input.value;
 
   if (text != "") {
@@ -17,25 +15,22 @@ addBtn.addEventListener("click", (e) => {
     ul.appendChild(li);
 
     input.value = "";
-    empty.style.display = "none";
   }
 });
 
 function addDeleteBtn() {
   const deleteBtn = document.createElement("button");
+  const deleteImg = document.createElement("img");
 
-  deleteBtn.textContent = "X";
+  deleteImg.src = "../imagen/bomba.webp";
+  deleteBtn.appendChild(deleteImg);
+  deleteImg.className = "img-btn-delete";
   deleteBtn.className = "btn-delete";
 
   deleteBtn.addEventListener("click", (e) => {
     const item = e.target.parentElement;
-    ul.removeChild(item);
-
-    const items = document.querySelectorAll("li");
-
-    if (items.length === 0) {
-      empty.style.display = "block";
-    }
+    const item1 = item.parentElement
+    ul.removeChild(item1);
   });
 
   return deleteBtn;
