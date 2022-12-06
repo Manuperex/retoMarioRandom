@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="screen1.css">
+    
+
 </head>
-<body>
-    <audio preload="auto"> 
-        <source src="musica/btn.mp3" type="audio/mp2">
-      </audio>
-    <audio  preload="auto" src="musica/mrioRandom.mp3" autoplay="autoplay"></audio>
-    <audio src="musica/fondo.mp3" autoplay="autoplay" loop="loop"></audio>
+<body  onload="soundScreen();">
     <div class="container">
-        <div class="title-p1">
+        <div class="title-p1" onclick="marioRandom();">
             <p class="p-title">Mario</p>
             <p class="p-title" >Ramdom</p>
         </div>
@@ -24,6 +21,9 @@
             </div>
         </button>
     </div>
+
+
     <script src="sond-btn.js"></script>
+
 </body>
 </html>
