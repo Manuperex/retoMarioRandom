@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <title>Mario Random 2</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+
+<body onload="soundScreen();">
     <div class="container">
         <div class="titulo-pagina2">
-        <p class="titulo--2">
-            Mario Random
-        </p>
+            <p class="titulo--2">
+                Mario Random
+            </p>
         </div>
         <div class="search">
             <form>
@@ -22,22 +24,22 @@
         </div>
         <div class="li-container">
             <ul>
-                
+
             </ul>
         </div>
         <div class="container-btn">
-            <button class="btn-lets-go">
-            <div class="btn-lets-go-double">
-                <a href="#">Let´s go</a>
-            </div>
+            <button class="btn-lets-go" onmousedown="sonido.play()">
+                <div class="btn-lets-go-double">
+                    <a href="#">Let´s go</a>
+                </div>
             </button>
-            <button class="btn-reset">
-            <div class="btn-reset-double">
-                <a href="#">reset</a>
-            </div>
+            <button class="btn-reset" onmousedown="sonido.play()">
+                <div class="btn-reset-double">
+                    <a href="#">reset</a>
+                </div>
             </button>
         </div>
-        
+
         <div class="mario-container">
             <div class="mario-fondo">
                 <img src="../imagen/start.webp" alt="star" class="img-star">
@@ -45,7 +47,9 @@
             </div>
         </div>
     </div>
+
+    <script src="sond-btn.js"></script>
     <script src="./script.js"></script>
 </body>
-</html>
 
+</html>

@@ -183,6 +183,13 @@ a:link, a:visited, a:active {
   font-family: SuperMario256;
   font-size: 120%;
 }
+.btn-reset:hover{
+  box-shadow: 5px 5px 5px rgb(0, 255, 4);
+}
+.btn-lets-go:hover{
+  box-shadow: 5px 5px 5px rgb(0, 255, 4);
+}
+
 .mario-container{
   display: flex;
   width: 100%;
