@@ -8,6 +8,8 @@ Sitio web que elimina concursantes al azar y  el ultimo es el ganador, en donde 
 * Tecnologias Aplicadas
 * Funcionalidades
 * Variables Globales
+* Requerimientos Técnicos
+* Dificultades
 
 ## INTRODUCCIÓN
 Para todos los amantes de lo retro, llego un sitio web inspirado en Mario Karts de Nintendo 64, el cual cuenta con sonidos y animaciones relacionados a este juego,
@@ -61,3 +63,10 @@ En las diferentes hojas de estilos cuentan con las siguientes varibales:
 * Color de los bordes de los botones (--border-btn:#ffffff)
 * Color del boton let's go (--text-color-lets-go: #049CD8)
 * Color del boton reset (--text-color-reset: #43B047)
+
+## Requerimientos Técnicos
+El presente proyecto se desarrollo en 18hr, donde el proposito de este es cumplir con lo siguiente:
+
+
+## Dificultades
+Realizar las funcionalidades de seleccion de usuario de manera aleatoria y eliminacion de esté en la lista, teniendo en cuenta su nombre.
