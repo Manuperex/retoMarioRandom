@@ -67,6 +67,31 @@ En las diferentes hojas de estilos cuentan con las siguientes varibales:
 
 ## Requerimientos Técnicos
 El presente proyecto se desarrollo en 18hr, donde el proposito de este es cumplir con lo siguiente:
+La aplicación DEBE tener una lista de nombres.
+La aplicación DEBE seleccionar un nombre de la lista de coders a sacrificar.
+La aplicación DEBE mostrar un aviso con el nombre del coder sacrificado.
+Una vez un nombre es seleccionado NO DEBE volver a aparecer en la lista hasta que se reinicie la aplicación.
+La aplicación DEBE tener la funcionalidad de agregar o eliminar nombres en el front.
+La aplicación DEBE tener muchas animaciones y transiciones.
+La aplicación DEBE tener eventos que activen animaciones.
+La aplicación DEBE tener efectos de sonido.
+El diseño de la aplicación DEBE ser creativo, interactivo y entretenido (NO DEBE ser la típica ruleta).
+El tema de la aplicación es de libre elección.
+La aplicación DEBE tener una pantalla de inicio.
+La aplicación DEBE tener un botón de reinicio.
+La aplicación DEBE mostrar un aviso cuando el último coder es sacrificado.
+La aplicación DEBE volver a la pantalla de inicio cuando el último coder es sacrificado. El stack para desarrollar la - - - aplicación es el siguiente: HTML, CSS, Javascript, opcionales: frameworks de CSS, Bootstrap, Tailwind, Sass.
+La aplicación DEBE ser mobile first.
+La aplicación DEBE ser responsive para 4 puntos de quiebre como mínimo.
+La aplicación DEBE ser responsive para los dispositivos en horizontal también.
+El proyecto DEBE usar metodologías ágiles y marco de trabajo SCRUM.
+Se DEBEN definir los roles de SCRUM.
+Se debe hacer Daily todos los días.
+El proyecto DEBE usar Git y metodología GitFlow.
+La aplicación DEBE estar desplegada.
+Los avisos DEBEN ser pop-up, no simples alertas.
+El repositorio DEBE tener un README** **en el repositorio que describa y detalle el proyecto
+Para la aplicación se DEBE generar una documentación.
 
 
 ## Dificultades
