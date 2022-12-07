@@ -34,7 +34,7 @@ Se encuentra diseñado para 4 tipos de pantallas como lo son:
 
 ## TECNOLOGIAS APLICADAS
  
-HTML
+* HTML
 * Css
 * JavaScript
 * Sweetalert
