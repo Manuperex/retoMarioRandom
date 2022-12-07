@@ -47,17 +47,19 @@ addBtnLet.addEventListener("click", (e) => {
   for(let i=0; i<valor.length; i++){ 
     arrayUser.push(valor[i].textContent); 
   } 
-  console.log(arrayUser); 
-  // console.log(randomUser(arrayUser));
-  e.preventDefault(); 
-  nombreAleatorio = randomUser(arrayUser);
-  console.log(nombreAleatorio);
-  console.log(arrayUser);
-  arrayUser = deleteUser(arrayUser, nombreAleatorio);
-  e.preventDefault(); 
-  // nombreAleatorio = randomUser(arrayUser);
-  console.log(nombreAleatorio);
-  console.log(arrayUser);
+  if(arrayUser.length!==0){
+      console.log(arrayUser); 
+      // console.log(randomUser(arrayUser));
+      e.preventDefault(); 
+      nombreAleatorio = randomUser(arrayUser);
+      console.log(nombreAleatorio);
+      console.log(arrayUser);
+      arrayUser = deleteUser(arrayUser, nombreAleatorio);
+      e.preventDefault(); 
+      // nombreAleatorio = randomUser(arrayUser);
+      console.log(nombreAleatorio);
+      console.log(arrayUser);
+  }
 });
 
 function randomUser(arrayUser){
@@ -71,10 +73,20 @@ function deleteUser(arrayUser, nombre){
   const valor = document.querySelectorAll(".li-name");
   if(valor.length === 1){
     swal ( "Ganaste " + nombre );
+    document.getElementById('c-bowser').style.display = 'none'; // hide
+    document.getElementById('c-mario').style.display = ''; // show4
+    const winner=document.getElementById('txt-winner');
+    winner.textContent=nombre;
   }
+
   else{
     swal ( "Perdiste " + nombre );
+    document.getElementById('c-mario').style.display = 'none'; // hide
+    document.getElementById('c-bowser').style.display = ''; // show
+    const loser=document.getElementById('txt-loser');
+    loser.textContent=nombre;
   }
+
   for(let i=0; i<valor.length; i++){  
     // console.log(valor[i].textContent);
     if(nombre === valor[i].textContent){

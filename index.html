@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Random 2</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="fuego.css">
 </head>
 
 <body onload="soundScreen();">
@@ -40,15 +41,85 @@
             </button>
         </div>
 
-        <div class="mario-container">
+        <div class="mario-container" id="c-mario" style="display:none;" >
             <div class="mario-fondo">
-                <img src="../imagen/start.webp" alt="star" class="img-star">
-                <img src="../imagen/mario.webp" alt="Mario" class="img-mario">
+                <img class="start" src="imagen/start.webp" alt="">
+                <div class="name">
+                  <svg viewBox="0 0 100 100">
+                    <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+                    <text>
+                      <textPath xlink:href="#circle" id="txt-winner">
+                        Juan Manuel
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+               <img class="mario" src="imagen/mario.webp" alt="" >
+            </div>
+        </div>
+        <div class="bowser-container" id="c-bowser" style="display:none;">
+            <div class="bowser-fondo">
+                
+                <img src="imagen/Bowser.png" alt="bowser" class="img-bowser">
+                <div id="txt-loser"></div>
+                <div class="fire">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                  </div>
             </div>
         </div>
     </div>
     <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script> 
     <script src="sond-btn.js"></script>
+    <script src="fuegosArtificiales.js"></script>
     <script src="./script.js"></script>
     
 </body>
