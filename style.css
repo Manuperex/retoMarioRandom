@@ -16,7 +16,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: url(../imagen/castillo-princesa.webp);
-  background-position-x: -655px;
+  background-position-x: -500px;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -91,25 +91,34 @@ body {
 
 .li-container ul {
   padding: 0;
-  width: 100%;
+  width: 90%;
   height: 277px;
   padding-left: 20px;
   overflow-y: scroll;
 }
+.li-container ul::-webkit-scrollbar {
+  width: 12px;
+}
+.li-container ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+.li-container ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
 
-.li-container li {
+.li-container .li-name {
   gap: 10px;
   list-style: none;
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
-  width: 85%;
+  width: 80%;
   text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 }
-.li-container li p {
-  margin: 0;
-  padding: 4px 12px;
-  width: 80%;
+.li-container .li-name {
+  padding: 0px 12px;
   background-color: white;
   border: 3px solid var(--text-color-title);
   border-radius: 12px;
@@ -192,11 +201,11 @@ a:link, a:visited, a:active {
 
 .mario-container{
   width: 100%;
-  height: 314px;
+  height: auto;
 }
 
 .img-bowser{
-  width: 100%;
+  width: 80%;
 }
 .mario-fondo{
   background-color: rgb(255, 255, 255, 0.6);
@@ -263,11 +272,11 @@ a:link, a:visited, a:active {
 }
 .bowser-container{
   width: 100%;
-  height: 314px;
+  height: auto;
 }
 
 .img-bowser{
-  width: 100%;
+  width: 80%;
   grid-column: 1 / 3;
   grid-row: 1;
 }
@@ -296,7 +305,6 @@ a:link, a:visited, a:active {
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 30px;
   display: grid;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
 }
@@ -315,9 +323,9 @@ a:link, a:visited, a:active {
 }
 /* Final */
 
-@media only screen and (min-width:744px){
+@media only screen and (min-width:744px) and (max-width:899px){
   html, body, .container{
-      background-position-x: -430px;
+      background-position-x: -240px;
   }
   .container {
     width: 95%;
@@ -338,13 +346,13 @@ a:link, a:visited, a:active {
   }
   .li-container ul {
     padding: 0;
-    width: 100%;
+    width: 95%;
     height: 322px;
     padding-left: 20px;
     overflow-y: scroll;
   }
   
-  .li-container li {
+  .li-container .li-name {
     gap: 20px;
     list-style: none;
     border-radius: 10px;
@@ -353,9 +361,7 @@ a:link, a:visited, a:active {
     width: 85%;
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
   }
-  .li-container li p {
-    margin: 0;
-    width: 90%;
+  .li-container .li-name {
     background-color: white;
     border: 3px solid var(--text-color-title);
     border-radius: 12px;
@@ -372,7 +378,6 @@ a:link, a:visited, a:active {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
-
     width: 100%;
   }
   .btn-lets-go{
@@ -385,11 +390,20 @@ a:link, a:visited, a:active {
   }
   .mario-fondo{
     background-color: rgb(255, 255, 255, 0.6);
-    width: 70%;
+    /* width: 70%; */
     border-radius: 30px;
   }
+  .mario-container{
+    width: 70%;
+    height: auto;
+  }
+  
   .img-star{
     margin-left: 80px
+  }
+  .bowser-container{
+    width: 70%;
+    height: auto;
   }
   .fire{
     width: 100px;
@@ -403,8 +417,13 @@ a:link, a:visited, a:active {
 }
 @media only screen and (min-width:900px){
   html, body, .container{
-    background-position-x: -430px;
-}
+    background-position-x: -190px;
+  }
+  .container {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
   .titulo-pagina2{
     margin-top: -40px;
     margin-bottom: 50px;
@@ -414,31 +433,67 @@ a:link, a:visited, a:active {
     width: 95%;
   }
   .search form {
-    width: 95%;
+    width: 100%;
+    justify-content: center;
   }
   
   .li-container ul {
+    width: 100%;
     height: 400px;
+  }
+  
+  .li-container .li-name {
+    gap: 20px;
+    list-style: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    width: 80%;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .li-container .li-name {
+    background-color: white;
+    border: 3px solid var(--text-color-title);
+    border-radius: 12px;
+  }
+  .btn-delete {
+    margin-left: auto;
+    border: 3px solid var(--text-color-title);
+    border-radius: 12px;
+    outline: none;
+    width: 10%;
+  }
+  .container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
   }
   .btn-delete {
     width: 9%;
   }
   .btn-lets-go{
-    width: 32%;
+    width: 40%;
   }
   .btn-reset{
-    width: 32%;
+    width: 40%;
+    margin-top: 50px;
   }
   .mario-container{
     display: flex;
     width: 80%;
-    height: 314px;
+    height: auto;
     justify-content: center;
   }
   .mario-fondo{
     background-color: rgb(255, 255, 255, 0.6);
     width: 70%;
     border-radius: 30px;
+  }
+  .bowser-container{
+    width: 80%;
+    height: auto;
   }
   .img-star{
     margin-left: 120px
@@ -462,6 +517,13 @@ a:link, a:visited, a:active {
       width: 70%;
       font-size: 800%;
   }
+  .search {
+    width: 95%;
+  }
+  .search form {
+    width: 100%;
+    justify-content: center;
+  }
   .container {
     width: 100%;
     margin-left: auto;
@@ -477,6 +539,58 @@ a:link, a:visited, a:active {
   .fire{
     transform: scale(2.3);
     margin: 12em auto 0 6em;
-  }   
+  }
+  .container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .btn-lets-go{
+    width: 30%;
+  }
+  .btn-reset{
+    width: 30%;
+    margin-top: 50px;
+  }
+  .li-container {
+    width: 80%;
+  }
+  .li-container ul {
+    padding: 0;
+    width: 100%;
+    height: 322px;
+    padding-left: 20px;
+    overflow-y: scroll;
+  }
+  
+  .li-container .li-name {
+    gap: 20px;
+    list-style: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    width: 90%;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    font-size: 1.5rem;
+  }
+  .li-container .li-name {
+    background-color: white;
+    border: 3px solid var(--text-color-title);
+    border-radius: 12px;
+    height: 50px;
+  }
+  .btn-delete {
+    margin-left: auto;
+    border: 3px solid var(--text-color-title);
+    border-radius: 12px;
+    outline: none;
+    width: auto;
+  } 
+  .btn-delete img{
+    width: auto;
+    height: 100%;
+  }     
 }
 
