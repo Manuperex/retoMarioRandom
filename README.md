@@ -66,7 +66,8 @@ En las diferentes hojas de estilos cuentan con las siguientes varibales:
 * Color del boton reset (--text-color-reset: #43B047)
 
 ## Requerimientos Técnicos
-* El presente proyecto se desarrollo en 18hr, donde el proposito de este es cumplir con lo siguiente:
+El presente proyecto se desarrollo en 18hr, donde el proposito de este es cumplir con lo siguiente:
+   
 * La aplicación DEBE tener una lista de nombres.
 * La aplicación DEBE seleccionar un nombre de la lista de coders a sacrificar.
 * La aplicación DEBE mostrar un aviso con el nombre del coder sacrificado.
