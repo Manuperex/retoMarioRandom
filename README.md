@@ -7,6 +7,7 @@ Sitio web que elimina concursantes al azar y  el ultimo es el ganador, en donde 
 * Diseño
 * Tecnologias Aplicadas
 * Funcionalidades
+* Variables Globales
 
 ## INTRODUCCIÓN
 Para todos los amantes de lo retro, llego un sitio web inspirado en Mario Karts de Nintendo 64, el cual cuenta con sonidos y animaciones relacionados a este juego,
@@ -44,3 +45,14 @@ Se encuentra diseñado para 4 tipos de pantallas como lo son:
 * Eliminar usuarios de la lista.
 * Seleccionar el usuario perdedor aleatoriamente, eliminarlo de la lista y Bowser quemara su nombre.
 * Mencionar el nombre del ganador.
+
+## Variables Globales
+### CSS
+En las diferentes hojas de estilos cuentan con las siguientes varibales: 
+* Color de fondo del boton start (--bg-color-btn-start:#E52521)
+* Color del nombre del sitio web (--text-color-title:#FED201)
+* Color del borde de la letra (--border-letter:#000000)
+* Color de los titulos(--title-color: #ffffff)
+* Color de los bordes de los botones (--border-btn:#ffffff)
+* Color del boton let's go (--text-color-lets-go: #049CD8)
+* Color del boton reset (--text-color-reset: #43B047)
