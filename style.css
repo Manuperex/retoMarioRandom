@@ -18,7 +18,7 @@ body {
   background-image: url(imagen/castillo-princesa.webp);
   background-position-x: -500px;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   color: white;
   font-family: SuperMario256;
 }
@@ -502,8 +502,9 @@ a:link, a:visited, a:active {
     font-size: 2rem;
   }
   .fire{
-    transform: scale(1.8);
-    margin: 8em auto 0 2.8em;
+    display: block;
+    transform: scale(1);
+    margin: 2em auto 0 0em;
   }   
 }
 @media only screen and (min-width:1400px){
@@ -537,8 +538,9 @@ a:link, a:visited, a:active {
     font-size: 3rem;
   }
   .fire{
-    transform: scale(2.3);
-    margin: 12em auto 0 6em;
+    display: block;
+    transform: scale(1.8);
+    margin: 7em auto 0 4em;
   }
   .container-btn{
     display: flex;
