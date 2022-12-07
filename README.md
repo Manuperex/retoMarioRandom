@@ -23,14 +23,19 @@ Se encuentra diseñado para 4 tipos de pantallas como lo son:
 * 744px * 1133px
     
 ![image](https://user-images.githubusercontent.com/117925498/206206823-08949cfd-9b38-4d16-9999-d1b48aba98dc.png) 
+![image](https://user-images.githubusercontent.com/104181677/206253902-69541e4e-8393-4611-b532-37e24be5749c.png)
+
 
 * 1358px * 768px
    
 ![image](https://user-images.githubusercontent.com/117925498/206207008-71137523-6282-4510-9a20-bc1d39f0a50c.png)
+![image](https://user-images.githubusercontent.com/104181677/206255260-bc9a1d22-e8cc-433e-b1e1-434a1b411125.png)
 
 * 1440px * 1024px
   
   ![image](https://user-images.githubusercontent.com/117925498/206213459-ae624fa6-9052-4c0d-bf7b-7fcfd6b1403d.png)
+  ![image](https://user-images.githubusercontent.com/104181677/206255459-4901c087-a598-4196-80f5-7bb0bdba6bf7.png)
+
 
 
 ## TECNOLOGIAS APLICADAS
