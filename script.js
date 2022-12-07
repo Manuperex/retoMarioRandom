@@ -24,7 +24,7 @@ function addDeleteBtn() {
   const deleteBtn = document.createElement("button");
   const deleteImg = document.createElement("img");
 
-  deleteImg.src = "../imagen/bomba.webp";
+  deleteImg.src = "imagen/bomba.webp";
   deleteBtn.appendChild(deleteImg);
   deleteImg.className = "img-btn-delete";
   deleteBtn.className = "btn-delete";
