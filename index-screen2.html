@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Random 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="fuego.css">
+</head>
+
+<body onload="soundScreen();">
+    <div class="container">
+        <div class="titulo-pagina2">
+            <p class="titulo--2">
+                Mario Random
+            </p>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Agrega un concursante">
+                <button class="btn-add"><img src="../imagen/start.webp" alt=""></button>
+            </form>
+        </div>
+        <div class="li-container">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="container-btn">
+            <button class="btn-lets-go" onmousedown="sonido.play()">
+                <div class="btn-lets-go-double">
+                    <a href="#">Let´s go</a>
+                </div>
+            </button>
+            <button class="btn-reset" onmousedown="sonido.play()">
+                <div class="btn-reset-double">
+                    <a href="#">reset</a>
+                </div>
+            </button>
+        </div>
+
+        <div class="mario-container" id="c-mario" style="display:none;" >
+            <div class="mario-fondo">
+                <img class="start" src="imagen/start.webp" alt="">
+                <div class="name">
+                  <svg viewBox="0 0 100 100">
+                    <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+                    <text>
+                      <textPath xlink:href="#circle" id="txt-winner">
+                        Juan Manuel
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+               <img class="mario" src="imagen/mario.webp" alt="" >
+            </div>
+        </div>
+        <div class="bowser-container" id="c-bowser" style="display:none;">
+            <div class="bowser-fondo">
+                
+                <img src="imagen/Bowser.png" alt="bowser" class="img-bowser">
+                <div id="txt-loser"></div>
+                <div class="fire">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script> 
+    <script src="sond-btn.js"></script>
+    <!-- <script src="fuegosArtificiales.js"></script> -->
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
